@@ -1,4 +1,4 @@
-/*!
+/*
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
@@ -8993,7 +8993,15 @@ a.text-dark:hover {
 }
 
 .lavender-purple{
-    color: #7A5CFA;
+  background: -webkit-linear-gradient(right, #3E2D8C, #7A5CFA, #3E2D8C);;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grad-orange{
+  background: -webkit-linear-gradient(right, #FF8800, #FFB663, #FF8800);;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .dusty-rose{

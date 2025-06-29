@@ -31,7 +31,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
   }
 
   :root {
-    --primary-color:        #7A5CFA;
+    --primary-color:        #000000;
     --white-color:          #ffffff;
     --dark-color:           #171819;
     --about-bg-color:       #f9f9f9;
@@ -39,6 +39,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
     --gray-color:           #909090;
     --link-color:           #404040;
     --p-color:              #666262;
+    --purple:               #ab7eff;
 
     --base-font-family:     'Plain', sans-serif;
     --font-weight-bold:     bold;
@@ -145,6 +146,19 @@ https://www.tooplate.com/view/2119-gymso-fitness
     transition: all 0.3s ease;
   }
 
+  .orange-btn{
+    background: linear-gradient(90deg,rgba(255, 136, 0, 1) 0%, rgba(255, 182, 99, 1) 50%, rgba(255, 136, 0, 1) 100%);
+    border-radius: var(--border-radius-small);
+    padding: 14px 24px;
+    color: black;
+    font-size: var(--menu-font-size);
+    font-weight: var(--font-weight-normal);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+  }
+
   .custom-btn:hover {
     color: var(--primary-color);
   }
@@ -175,6 +189,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
 
 
 
+
   /*---------------------------------------
      GENERAL               
   -----------------------------------------*/
@@ -202,7 +217,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
   a:hover, 
   a:active, 
   a:focus {
-    color: var(--primary-color);
+    color: var(--purple);
     outline: none;
     text-decoration: none;
   }
@@ -258,7 +273,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
   -----------------------------------------*/
 
   .navbar {
-    background: rgb(75, 75, 75);
+    background: rgb(47, 47, 47);
     padding: 1rem;
   }
 
@@ -286,7 +301,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
 
   .nav-item .nav-link.active,
   .nav-item .nav-link:hover {
-    color: var(--primary-color);
+    color: var(--purple);
   }
 
   .navbar .social-icon li a {
@@ -616,7 +631,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
   }
 
   .social-icon li a:hover {
-    color: var(--primary-color);
+    color: var(--purple);
   }
 
 
