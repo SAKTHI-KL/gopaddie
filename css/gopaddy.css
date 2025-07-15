@@ -144,6 +144,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
     letter-spacing: 0.5px;
     white-space: nowrap;
     transition: all 0.3s ease;
+    border-radius: 50px;
   }
 
   .orange-btn{
@@ -497,12 +498,15 @@ https://www.tooplate.com/view/2119-gymso-fitness
     background: var(--about-bg-color);
   }
 
-  .about-working-hours {
+  .about-cons {
     border-left: 2px solid;
     padding-left: 3.5rem;
   }
+  .about-pros {
+    padding-left: 3.5rem;
+  }
 
-  .about-working-hours strong {
+  .about-cons strong {
     color: var(--white-color);
     opacity: 0.85;
   }
@@ -634,7 +638,73 @@ https://www.tooplate.com/view/2119-gymso-fitness
     color: var(--purple);
   }
 
+  .cotton-button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
 
+  .cotton-button:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  }
+  .cotton-button img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .foreground-image {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: auto;
+    height: 80%;
+  }
+  .foreground-image2 {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: auto;
+    height: 80%;
+  }
+
+  ol {
+      max-width: 600px;
+      margin: auto;
+      padding-left: 0;
+      list-style: none;
+    }
+
+  ol li {
+    margin-bottom: 15px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  ol li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  }
+
+  .icon {
+    color: #ffae00;
+    font-size: 1.2em;
+    flex-shrink: 0;
+  }
+
+  .cross {
+    color: #ffae00; 
+  } */
+  
   /*---------------------------------------
      RESPONSIVE STYLES              
   -----------------------------------------*/
@@ -673,7 +743,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
       font-size: 38px;
     }
 
-    .about-working-hours {
+    .about-cons {
       border-left: 0;
       padding: 22px 0 0 0;
     }
@@ -681,4 +751,22 @@ https://www.tooplate.com/view/2119-gymso-fitness
     .contact h2 span {
       display: block;
     }
+  }
+  @media screen and (max-width: 769px) {
+    .cont-top {
+      padding-top: 250px;
+    }
+
+    .foreground-image {
+      visibility: hidden;
+    }
+    .foreground-image2 {
+      visibility: visible;
+      position: absolute;
+      top: 200px;
+      width: auto;
+      height: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
   }
