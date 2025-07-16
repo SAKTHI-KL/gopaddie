@@ -703,7 +703,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
 
   .cross {
     color: #ffae00; 
-  } */
+  } 
   
   /*---------------------------------------
      RESPONSIVE STYLES              
@@ -763,10 +763,20 @@ https://www.tooplate.com/view/2119-gymso-fitness
     .foreground-image2 {
       visibility: visible;
       position: absolute;
-      top: 200px;
+      top: 30%;
       width: auto;
-      height: 50%;
+      height: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
   }
   }
+   @media screen and (min-width: 769px) {
+    .hero{
+      min-height: 85vh;
+    }
+   }
+    @media screen and (min-width: 1024px) {
+    .hero{
+      min-height: 100vh;
+    }
+   }
